@@ -18,9 +18,31 @@ console.log(typeof(bigNumber))
 
 const name = ["Khalid","Ironman", "Thor"]
 let intro = {
-    name: khalid,
-    age: 19
-}
+    name: "khalid",
+    age: 19,
+};
 const greet = function() {
     console.log("Hello world");
 }
+
+
+
+
+
+// *******************
+// stack (Primitive), Heap(Non-Primitive)
+
+let name1 = "khalid"
+let name2 = name1
+ name2 = "op"
+console.table([name1,name2])
+
+
+let user1 = {
+    name: "khalid"
+}
+
+let user2 = user1
+user2.name="op"
+
+console.table([user1,user2])
